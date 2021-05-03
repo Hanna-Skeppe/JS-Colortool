@@ -1,0 +1,101 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #3c4761;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3c4761;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.title {
+  font-size: 5.4rem;
+  color: #afbb9f;
+  font-weight: 400;
+  margin: 40px auto 50px auto;
+}
+
+
+label, p {
+  font-size: 1.8rem;
+  margin: 0 0 10px 0px;
+  align-self: flex-start;
+}
+
+input {
+  font-size: 2rem;
+  align-self: flex-start;
+  margin: 0 0 2rem 0;
+  width: 40%;
+  min-width: 240px;
+}
+
+input[type="text"] {
+  padding: 5px 10px; 
+  border: none;
+  border-radius: 3px;
+}
+
+.toggle-container {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.toggle-text {
+  margin: auto;
+}
+
+.unselected {
+  opacity: 0.4;
+}
+
+.toggle-btn {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: #929292;
+  margin: auto 1rem;
+}
+
+.inner-circle {
+  margin: 0.3rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.35s ease;
+}
+
+.toggle-btn.toggled > .inner-circle {
+  transform: translateX(3rem);
+  background-color: #333;
+}
+
+.box {
+  width: 100%;
+  max-width: 600px;
+  min-width: 240px;
+  height: 80px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: #916161;
+  margin: 0 auto 20px auto;
+}
